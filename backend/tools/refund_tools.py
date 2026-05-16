@@ -18,7 +18,13 @@ async def check_refund_eligibility(order_id: str) -> str:
         if not order:
             return f"Order {order_id} not found."
             
-        days_since = (utcnow() - order.created_at).days
+        from datetime import timezone
+        
+        created_at_aware = order.created_at
+        if created_at_aware.tzinfo is None:
+            created_at_aware = created_at_aware.replace(tzinfo=timezone.utc)
+            
+        days_since = (utcnow() - created_at_aware).days
         if days_since > 10:
             return f"Order {order_id} is {days_since} days old. It exceeds the 10-day return policy."
             
