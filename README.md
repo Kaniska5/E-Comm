@@ -121,20 +121,6 @@ See `.env.example` for all required variables. Key ones:
 | `LANGCHAIN_API_KEY` | LangSmith API key |
 | `REFUND_AUTO_APPROVE_LIMIT` | Max auto-approved refund in Rs (default: 1000) |
 
-## Build Phases
-
-| Phase | Status | Description |
-|---|---|---|
-| 1 | Done | Project setup, uv, structure, config |
-| 2 | Pending | Database models + FastAPI + seed data |
-| 3 | Pending | LangGraph orchestrator + state |
-| 4 | Pending | All 4 specialized agents |
-| 5 | Pending | Guardrails (refund, privacy, loop) |
-| 6 | Pending | Human-in-the-loop approval workflow |
-| 7 | Pending | Monitoring: audit logs + LangSmith |
-| 8 | Pending | Streamlit UI (chat + approval dashboard) |
-| 9 | Pending | Tests + cleanup + docs |
-
 ## API Endpoints
 
 | Method | Path | Description |
