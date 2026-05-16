@@ -4,6 +4,25 @@
 
 ---
 
+## System Showcase
+
+### FAQ Resolution
+![FAQ Resolution](docs/Images/FAQ%20Resolution.png)
+
+### Order Tracking
+![Order Tracking](docs/Images/Order%20Tracking.png)
+
+### Refund Processing (Auto-Approved)
+![Refund Processing](docs/Images/Refund%20processing.png)
+
+### Refund Processing (Human in Loop)
+![Refund Processing HITL](docs/Images/Refund%20processing%20-%20human%20in%20loop.png)
+
+### LangSmith Tracing
+![LangSmith Tracing](docs/Images/Tracing.png)
+
+---
+
 ## Architecture
 
 ```
